@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCqu7jfutBKO9opJQuH_zb0OXmLxUdDK5s",
+            authDomain: "appfirebase-c1b3a.firebaseapp.com",
+            databaseURL: "https://appfirebase-c1b3a-default-rtdb.firebaseio.com",
+            projectId: "appfirebase-c1b3a",
+            storageBucket: "appfirebase-c1b3a.appspot.com",
+            messagingSenderId: "195502023075",
+            appId: "1:195502023075:web:1be238753d2fa139083a16",
+            measurementId: "G-VXS1Z944DL"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>Crude Application</title> 
+</head>
+
+<body>
+    <div id="mainContainer">
+        <div id="headingContainer">
+            <h2>ToDo App by Abrar</h2>
+        </div>
+        <div id="wrapper">
+            <input type="text" placeholder="Write Your Gaol!" id="textTodo">
+            <button id="addLi" onclick="addList()">Add Item</button>
+            <button id="btnDelAll" onclick="deleteAll()">Delete All</button>
+        </div>
+        <hr>
+        <div id="containerList">
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
